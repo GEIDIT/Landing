@@ -1,0 +1,63 @@
+.Service {
+  width: 100%;
+  margin-block-end: 90px;
+}
+
+.Service-Container {
+  border: 2px solid transparent;
+  min-width: 360px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.Service-Container-Image img {
+  width: 100%;
+  height: auto;
+}
+
+.Service-Container-Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.Service-Container-Text h3 {
+  font: var(--headLineMobile3);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--alternativeBlack);
+}
+
+.Service-Container-Text p {
+  font: var(--body1);
+  width: 85%;
+  max-width: 800px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--alternativeBlack);
+}
+
+.Service-Container-Text button {
+  border: none;
+  margin-block-start: 10px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  padding-block-start: 18px;
+  padding-block-end: 18px;
+  border-radius: 10px;
+  background-color: var(--Nocolor);
+  font: var(--headLineMobile2);
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  font-weight: 600;
+}

@@ -1,13 +1,48 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*font size variable*/
+  --fontBase: "Inter", sans-serif;
+  --fontAlternative: "Oxygen", sans-serif;
+
+  --headLineMobile1: 35px/42px var(--fontBase);
+  --headLineMobile2: 16px/19px var(--fontBase);
+  --headLineMobile3: bold 33px/40px var(--fontBase);
+
+  --headLine1: bold 45px/52px var(--fontBase);
+  --headLine2: 28px/34px var(--fontBase);
+  --headLine3: bold 48px/77px var(--fontBase);
+
+  --body1: 16px/19px var(--fontBase);
+
+  --headLine4: bold 34px/55px var(--fontBase);
+  --headLine5: bold 24px/38px var(--fontBase);
+  --body1: 16px/25px var(--fontBase);
+  --body2: 14px/22px var(--fontBase);
+  --buttom: bold 14px/23px var(--fontBase);
+  --caption: 12px/19px var(--fontBase);
+  --mencion: lighter 24px/39px var(--fontAlternative);
+  --mencion2: 34px/55px var(--fontAlternative);
+  --mencion3: bold 34px/55px var(--fontAlternative);
+  --testimony: bold 16px/26px var(--fontAlternative);
+  /*bg color variable*/
+  --bg: #f8f9fb;
+  --gradient: linear-gradient(90deg, #0072ff 3.26%, #00c6ff 79.34%);
+  backdrop-filter: blur(39.7657px);
+  /*color variable*/
+  --white: white;
+  --softblue: #a7ffff;
+  --blue: #356fcd;
+  --alternativeBlack: #373739;
+  --Nocolor: transparent;
 }
