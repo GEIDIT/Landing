@@ -3,6 +3,7 @@ import React from "react";
 import "./Hero.styles.css";
 
 import heroImage from "../../Assets/images/heroImage.png";
+import { Button } from "../Button/Button";
 
 export const Hero = () => {
   return (
@@ -12,13 +13,17 @@ export const Hero = () => {
           <img src={heroImage} alt="GEIDIT-Desarollo-de-aplicaciones-web" />
         </div>
         <div className="Hero-Text">
-          <h1> Welcome to the React App! </h1>
+          <h1> Desarrollo de software a la medida y ciencia de datos. </h1>
           <p>
             Impulsamos y transformamos negocios basados en tecnología y ciencia
             de datos.
           </p>
 
-          <button>Platiquemos de tu idea</button>
+          <Button
+            Color="solid"
+            Text="¡Platiquemos de tu idea!"
+            Message="¡Hey  *GEIDIT*  tengo un proyecto increíble! Quiero saber cuáles de sus servicios le dara más valor a mi proyecto !"
+          />
         </div>
       </div>
     </div>

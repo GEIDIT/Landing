@@ -37,27 +37,33 @@
   color: var(--alternativeBlack);
 }
 
-.Service-Container-Text p {
+.Service-Container-Description {
+  margin: 0 auto;
+
+  max-width: 600px;
+}
+.Service-Container-Description p {
   font: var(--body1);
-  width: 85%;
-  max-width: 800px;
+  margin-bottom: 25px;
+  text-align: justify;
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--alternativeBlack);
 }
 
-.Service-Container-Text button {
-  border: none;
-  margin-block-start: 10px;
-  padding-inline-start: 40px;
-  padding-inline-end: 40px;
-  padding-block-start: 18px;
-  padding-block-end: 18px;
-  border-radius: 10px;
-  background-color: var(--Nocolor);
-  font: var(--headLineMobile2);
-  color: var(--blue);
-  border: 2px solid var(--blue);
-  font-weight: 600;
+@media screen and (min-width: 768px) {
+  .Service-Container {
+    flex-direction: row;
+  }
+  .Odd {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Service-Container-Text {
+    border: 2px solid transparent;
+    width: 60%;
+  }
 }
