@@ -1,5 +1,10 @@
 .Navbar {
+  z-index: 10;
   background: var(--white);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .Navbar-Container {
@@ -12,8 +17,8 @@
   justify-content: space-between;
   padding-inline-start: 18px;
   padding-inline-end: 18px;
-  padding-block-start: 18px;
-  padding-block-end: 18px;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
 }
 
 .Navbar-Logo {
@@ -41,5 +46,41 @@
   height: 100%;
 }
 
-.Navbar-Button {
+.Navbar-Button button {
+  border: none;
+  background-color: var(--AlternativeBlue);
+  padding: 9px 22px;
+  border-radius: 10px;
+  font: var(--headLineMobile2);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.Navbar-list a {
+  font: var(--headLineMobile2);
+  text-decoration: none;
+  color: var(--black2);
+}
+
+.Navbar-list a:hover {
+  color: var(--AlternativeBlue);
+}
+
+@media screen and (min-width: 768px) {
+  .Navbar-Links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  .Navbar-Hamburger {
+    display: none;
+  }
+  .Navbar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
 }

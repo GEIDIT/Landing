@@ -3,28 +3,8 @@ import { Service } from "../Service/Service";
 
 import "./Services.styles.css";
 
-import ServicioImg from "../../Assets/images/feature1.png";
-
-const ServiceList = [
-  {
-    title: "Tecnología a la medida",
-    description:
-      "Toda nuestra experiencia desarrollando productos digitales puesta para construir basado en necesidades del negocio y sus clientes.",
-    img: ServicioImg,
-  },
-  {
-    title: "Servicio 2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    img: ServicioImg,
-  },
-  {
-    title: "Servicio 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    img: ServicioImg,
-  },
-];
+import { Data } from "../../Data/Data";
+const { ServiceList } = Data;
 
 export const Services = () => {
   return (
@@ -38,8 +18,10 @@ export const Services = () => {
           </p>
         </div>
         <div className="Services-Containt">
-          {ServiceList.map((service) => {
-            return <Service service={service} />;
+          {ServiceList.map((service, index) => {
+            return (
+              <Service key={service.title} service={service} index={index} />
+            );
           })}
         </div>
       </div>

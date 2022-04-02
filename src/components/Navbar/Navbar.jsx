@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.styles.css";
 
 import menu from "../../Assets/icons/menu.png";
+import { Button } from "../Button";
 //exportar este objeto
 
 const NavbarItems = {
@@ -49,10 +50,19 @@ export const Navbar = () => {
             })}
           </div>
           <div className="Navbar-Button">
-            <button>{NavbarItems.textButon}</button>
+            <Button
+              Color="Nav"
+              Text={NavbarItems.textButon}
+              Message="¡Hey  *GEIDIT*  tengo un proyecto increíble! Quiero saber cuáles de sus servicios le dara más valor a mi proyecto !"
+            />
           </div>
         </div>
-        <div className="Navbar-Hamburger">
+        <div
+          className="Navbar-Hamburger"
+          onClick={() => {
+            alert("Hola");
+          }}
+        >
           <img src={menu} alt="menu" />
         </div>
       </div>
