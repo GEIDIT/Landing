@@ -1,6 +1,40 @@
 import ServicioImg from "../Assets/images/feature1.png";
+import LogoFooter from "../Assets/images/GeiditLogo.png";
 
 export const Data = {
+  HeroInfo: {
+    Title: "Desarrollo de software a la medida y ciencia de datos.",
+    Subtitle:
+      "Impulsamos y transformamos negocios basados en tecnología y ciencia de datos.",
+    CTA: "¡Platiquemos de tu idea!",
+    Message:
+      "¡Hey  *GEIDIT*  tengo un proyecto increíble! Quiero saber cuáles de sus servicios le dara más valor a mi proyecto !",
+  },
+  NavbarItems: {
+    Logo: {
+      name: "Logo",
+      url: "https://i.postimg.cc/44MYBSNS/Geidit-Logo-desarollo-de-web-apps.png",
+    },
+    Links: [
+      {
+        name: "Nosotros",
+        path: "/about",
+      },
+      {
+        name: "Servicios",
+        path: "/services",
+      },
+      {
+        name: "Contact",
+        path: "/contact",
+      },
+      {
+        name: "Vacantes",
+        path: "/vacancies",
+      },
+    ],
+    textButon: "Contactanos",
+  },
   WhatsApp: process.env.REACT_APP_WHATSAPP,
   ServiceList: [
     {
@@ -22,7 +56,7 @@ export const Data = {
       img: ServicioImg,
       Message:
         "¡Hey  *GEIDIT*  tengo un proyecto increíble! Quiero Obtener información que me permita tomar decisiones de negocio  y/o conocer un panorama más amplio de donde se encuentra mi negocio. !",
-      Text: "¡Platiquemos de que datos podemos proporcionarte!",
+      Text: "¡Platiquemos sobre datos!",
     },
     {
       title: "Tecnología a la medida",
@@ -34,4 +68,55 @@ export const Data = {
       Text: "Platiquemos de tu idea  ?",
     },
   ],
+  CTABlock: {
+    title:
+      "Estás a un mensaje de empezar a construir el siguiente gran producto ",
+    description:
+      "Nos encantaría saber de tus necesidades, ¡no dudes en contactarnos!",
+    Message: "¡Hey  *GEIDIT*  tengo un proyecto increíble! ¿Dónde empezamos?",
+    Text: "Vamos a construir juntos",
+  },
+  FooterInfo: {
+    Logo: {
+      name: "Logo",
+      url: LogoFooter,
+    },
+    Links: [
+      {
+        name: "Nosotros",
+        path: "/about",
+      },
+      {
+        name: "Servicios",
+        path: "/services",
+      },
+      {
+        name: "Contact",
+        path: "/contact",
+      },
+      {
+        name: "Vacantes",
+        path: "/vacancies",
+      },
+    ],
+    Social: [
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/Geidit.Mx/",
+        icon: "fa-brands fa-facebook",
+      },
+      {
+        name: "Instagram",
+        url: "",
+        icon: "fa-brands fa-instagram",
+      },
+      {
+        name: "Whatsapp",
+        url: `https://wa.me/${
+          process.env.REACT_APP_WHATSAPP
+        }?text=${"¡Hey  *GEIDIT*  tengo un proyecto increíble! ¿Dónde empezamos?"}`,
+        icon: "fa-brands fa-whatsapp",
+      },
+    ],
+  },
 };

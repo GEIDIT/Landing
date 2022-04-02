@@ -1,0 +1,60 @@
+.Banner {
+  margin-top: 60px;
+  background: var(--gradient);
+}
+
+.Banner-Container {
+  min-width: 360px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 60px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Banner-Content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--white);
+  gap: 30px;
+}
+
+.Banner-Content h3 {
+  font: var(--headLine2);
+  font-weight: bold;
+}
+
+.Banner-Text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#ContactBtn {
+  margin: 30px auto;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .Banner-Container {
+    text-align: left;
+  }
+  .Banner-Content {
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Banner-Text {
+    width: 50%;
+  }
+  #ContactBtn {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

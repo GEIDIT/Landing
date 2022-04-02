@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: var(--bg);
 }
 
@@ -8,11 +8,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-rendering: optimizeLegibility;
 }
 
 :root {
   /*font size variable*/
-  --fontBase: "Inter", sans-serif;
+  --fontBase: "Nunito Sans", sans-serif;
   --fontAlternative: "Oxygen", sans-serif;
 
   --headLineMobile1: 35px/42px var(--fontBase);
@@ -27,14 +28,6 @@ body {
 
   --headLine4: bold 34px/55px var(--fontBase);
   --headLine5: bold 24px/38px var(--fontBase);
-  --body1: 16px/25px var(--fontBase);
-  --body2: 14px/22px var(--fontBase);
-  --buttom: bold 14px/23px var(--fontBase);
-  --caption: 12px/19px var(--fontBase);
-  --mencion: lighter 24px/39px var(--fontAlternative);
-  --mencion2: 34px/55px var(--fontAlternative);
-  --mencion3: bold 34px/55px var(--fontAlternative);
-  --testimony: bold 16px/26px var(--fontAlternative);
   /*bg color variable*/
   --bg: #f8f9fb;
   --gradient: linear-gradient(90deg, #0072ff 3.26%, #00c6ff 79.34%);
@@ -46,5 +39,8 @@ body {
   --AlternativeBlue: #0271fe;
   --alternativeBlack: #373739;
   --black2: #6a6a6a;
+  --gray: #7b839e;
+  --gray2: #999fb3;
+  --hardBlue: #2c2f3b;
   --Nocolor: transparent;
 }
