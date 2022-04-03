@@ -1,4 +1,6 @@
 import ServicioImg from "../Assets/images/feature1.png";
+import ServicioImg1 from "../Assets/images/feature2.png";
+import ServicioImg2 from "../Assets/images/feature3.png";
 import LogoFooter from "../Assets/images/GeiditLogo.png";
 
 export const Data = {
@@ -52,20 +54,22 @@ export const Data = {
       title: "Ciencia de Datos",
       description: [
         "Generamos entendimiento a través de la extracción y procesamiento de datos para unir todos los puntos y crear insights de valor para usuarios, audiencias, negocios y políticos.",
+        "Desde el monitoreo de noticas, seguimiento de tendencias, análisis de datos, creación de dashboards y visualizaciones de datos, Podemos brindarte informacion clave.",
       ],
-      img: ServicioImg,
+      img: ServicioImg1,
       Message:
         "¡Hey  *GEIDIT*  tengo un proyecto increíble! Quiero Obtener información que me permita tomar decisiones de negocio  y/o conocer un panorama más amplio de donde se encuentra mi negocio. !",
       Text: "¡Platiquemos sobre datos!",
     },
     {
-      title: "Tecnología a la medida",
+      title: "Soluciones a medida",
       description: [
-        "Toda nuestra experiencia desarrollando productos digitales puesta para construir basado en necesidades del negocio y sus clientes.",
+        "Soluciones a medida para cualquier tipo de proyecto, desde una solución de Marketing Digital hasta una solución de desarrollo de software a la medida.",
+        "Desarrollamos soluciones web a medida  para resolver los problemas reales de tu empresa. Integramos los procesos de tu negocio en un único sistema.",
       ],
-      img: ServicioImg,
+      img: ServicioImg2,
       Message: "Desarollo de productos digitales",
-      Text: "Platiquemos de tu idea  ?",
+      Text: "Dinos como podemos ayudarte",
     },
   ],
   CTABlock: {
@@ -75,6 +79,11 @@ export const Data = {
       "Nos encantaría saber de tus necesidades, ¡no dudes en contactarnos!",
     Message: "¡Hey  *GEIDIT*  tengo un proyecto increíble! ¿Dónde empezamos?",
     Text: "Vamos a construir juntos",
+  },
+  FormInfo: {
+    Title: "Hablemos",
+    Description:
+      "Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.",
   },
   FooterInfo: {
     Logo: {

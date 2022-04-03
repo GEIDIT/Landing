@@ -44,7 +44,7 @@
   }
   .Banner-Content {
     flex-direction: row;
-    width: 70%;
+    width: 90%;
     align-items: center;
     justify-content: space-between;
   }
@@ -52,9 +52,12 @@
     width: 50%;
   }
   #ContactBtn {
-    width: 30%;
+    width: 40%;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  #ContactBtn {
+    width: 25%;
+  }
 }

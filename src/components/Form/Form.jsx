@@ -1,5 +1,8 @@
 import React from "react";
+import { Data } from "../../Data/Data";
 import "./Form.styles.css";
+
+const { FormInfo } = Data;
 
 export const Form = () => {
   return (
@@ -7,11 +10,8 @@ export const Form = () => {
       <div className="Form-Container">
         <form id="contact" class="form" name="contact" netlify>
           <div class="form-content">
-            <h2 class="title">Hablemos</h2>
-            <p class="form-text">
-              Si está interesado en trabajar conmigo en su próximo proyecto, no
-              dude en ponerse en contacto conmigo.
-            </p>
+            <h2 class="title">{FormInfo.Title}</h2>
+            <p class="form-text">{FormInfo.Description}.</p>
             <label for="form-name">
               Nombre Completo
               <input
