@@ -15,7 +15,7 @@
 
 .Services-container-Text {
   margin-top: 65px;
-  margin-bottom: 45px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,9 +30,11 @@
 }
 
 .Services-container-Text p {
+  max-width: 500px;
   font: var(--body1);
+  color: var(--gray);
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0.02em;
   color: var(--alternativeBlack);
 }

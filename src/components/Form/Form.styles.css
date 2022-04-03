@@ -1,0 +1,91 @@
+.Form {
+  width: 100%;
+  background: white;
+}
+
+.Form-Container {
+  min-width: 360px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-inline-size: 540px;
+  margin: auto;
+}
+.form {
+  padding-block-start: 80px;
+  margin-block-start: 40px;
+  margin-block-end: 80px;
+}
+
+.form .title {
+  background: var(--AlternativeBlue);
+  color: var(--white);
+  font: var(--headLine5);
+  padding-block-end: 4px;
+  padding-block-start: 4px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  text-decoration: none;
+  margin-inline-start: 4px;
+  box-shadow: -4px 4px 0 var(--blue);
+  margin: 0;
+}
+
+.form-text {
+  color: var(--black2);
+  font: var(--body1);
+  margin: 0;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  text-align: left;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  color: var(--black2);
+  font: var(--body1);
+  text-align: left;
+}
+
+.form input,
+.form textarea {
+  border: 2px solid #858c94;
+  border-radius: 8px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  font: var(--body1);
+  margin-block-start: 8px;
+}
+
+.Privacidad {
+  margin: 0 auto;
+  max-width: 550px;
+  font-size: 13px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .form .title {
+    align-self: stretch;
+    text-align: center;
+  }
+  .Privacidad {
+    margin: 40px auto;
+    max-width: 550px;
+  }
+}

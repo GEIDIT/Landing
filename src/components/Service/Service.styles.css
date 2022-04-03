@@ -37,6 +37,14 @@
   color: var(--alternativeBlack);
 }
 
+.Service-Container-Text h3::after {
+  border-left: 1.5em solid #0072ff;
+  display: block;
+  content: "";
+  height: 2px;
+  margin-top: 0.5em;
+}
+
 .Service-Container-Description {
   margin: 0 auto;
 
@@ -47,14 +55,26 @@
   margin-bottom: 25px;
   text-align: justify;
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0.02em;
-  color: var(--alternativeBlack);
+  color: var(--gray);
 }
 
 @media screen and (min-width: 768px) {
   .Service-Container {
     flex-direction: row;
+  }
+
+  .Service-Container-Text {
+    align-items: flex-start;
+  }
+  .Service-Container-Text h3 {
+    text-align: left;
+  }
+  .Service-Container-Description p {
+    text-align: left;
+    max-width: 450px;
+    margin-right: 60px;
   }
   .Odd {
     order: 1;
@@ -65,5 +85,9 @@
   .Service-Container-Text {
     border: 2px solid transparent;
     width: 60%;
+  }
+  .Service-Container-Description {
+    margin-left: 0;
+    max-width: 500px;
   }
 }

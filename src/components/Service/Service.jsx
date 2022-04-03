@@ -12,7 +12,7 @@ export const Service = ({ service, index }) => {
         <div
           className={
             (index + 1) % 2 === 0
-              ? "Service-Container-Image "
+              ? "Service-Container-Image Even "
               : "Service-Container-Image Odd"
           }
         >
