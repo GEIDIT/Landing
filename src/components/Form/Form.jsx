@@ -14,6 +14,7 @@ export const Form = () => {
           name="contactos"
           method="POST"
           netlify
+          data-netlify-recaptcha="true"
           data-netlify="true"
           action="/"
         >
