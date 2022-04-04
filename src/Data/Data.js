@@ -2,6 +2,7 @@ import ServicioImg from "../Assets/images/feature1.png";
 import ServicioImg1 from "../Assets/images/feature2.png";
 import ServicioImg2 from "../Assets/images/feature3.png";
 import LogoFooter from "../Assets/images/GeiditLogo.png";
+import ErrorImg from "../Assets/images/Error.png";
 
 export const Data = {
   HeroInfo: {
@@ -21,18 +22,22 @@ export const Data = {
       {
         name: "Nosotros",
         path: "/about",
+        enabled: false,
       },
       {
         name: "Servicios",
         path: "/services",
+        enabled: false,
       },
       {
         name: "Contact",
         path: "/contact",
+        enabled: false,
       },
       {
         name: "Vacantes",
         path: "/vacancies",
+        enabled: false,
       },
     ],
     textButon: "Contactanos",
@@ -68,7 +73,8 @@ export const Data = {
         "Desarrollamos soluciones web a medida  para resolver los problemas reales de tu empresa. Integramos los procesos de tu negocio en un único sistema.",
       ],
       img: ServicioImg2,
-      Message: "Desarollo de productos digitales",
+      Message:
+        "¡Hey  *GEIDIT*  tengo un proyecto increíble! Quiero un sistema para mi negocio  !",
       Text: "Dinos como podemos ayudarte",
     },
   ],
@@ -127,5 +133,14 @@ export const Data = {
         icon: "fa-brands fa-whatsapp",
       },
     ],
+  },
+  ErrorPage: {
+    img: ErrorImg,
+    Title: "404",
+    Subtitle: "Página no encontrada",
+    Description:
+      "lo sentimos, no se pudo encontrar la página que solicitaste. Por favor, vuelva a la página de inicio",
+    btn: "Regresar al inicio",
+    path: "/",
   },
 };

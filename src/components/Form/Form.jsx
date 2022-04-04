@@ -8,11 +8,17 @@ export const Form = () => {
   return (
     <div className="Form">
       <div className="Form-Container">
-        <form id="contact" class="form" name="contact" netlify>
-          <div class="form-content">
-            <h2 class="title">{FormInfo.Title}</h2>
-            <p class="form-text">{FormInfo.Description}.</p>
-            <label for="form-name">
+        <form
+          id="contact"
+          className="form"
+          name="contactos"
+          method="POST"
+          data-netlify="true"
+        >
+          <div className="form-content">
+            <h2 className="title">{FormInfo.Title}</h2>
+            <p className="form-text">{FormInfo.Description}.</p>
+            <label forHtml="form-name">
               Nombre Completo
               <input
                 required
@@ -22,7 +28,7 @@ export const Form = () => {
                 placeholder="Escribe tu nombre"
               />
             </label>
-            <label for="form-company">
+            <label forHtml="form-company">
               Empresa
               <input
                 name="company"
@@ -31,7 +37,7 @@ export const Form = () => {
                 placeholder="Escribe el nombre de empresa (opcional)"
               />
             </label>
-            <label for="form-email">
+            <label forHtml="form-email">
               Correo electrónico
               <input
                 required
@@ -41,7 +47,7 @@ export const Form = () => {
                 placeholder="Escribe tu correo electronico"
               />
             </label>
-            <label for="form-phone">
+            <label forHtml="form-phone">
               Teléfono
               <input
                 required
@@ -51,7 +57,15 @@ export const Form = () => {
                 placeholder="Escribe tu número de teléfono"
               />
             </label>
-            <label for="form-message">
+            <label forHtml="form-service">
+              Servicio en que está interesado
+              <select name="service" id="service">
+                <option value="Web">Desarrollo Web</option>
+                <option value="Datos">Ciencia de Datos</option>
+                <option value="Sofware">Soluciones a medida</option>
+              </select>
+            </label>
+            <label forHtml="form-message">
               Mensaje
               <textarea
                 required
@@ -63,7 +77,7 @@ export const Form = () => {
               ></textarea>
             </label>
 
-            <button class="button button-outline" type="submit">
+            <button className="button button-outline" type="submit">
               Enviar mensaje
             </button>
           </div>
