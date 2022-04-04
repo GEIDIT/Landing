@@ -21,11 +21,14 @@ export const Navbar = () => {
         <div className="Navbar-Links">
           <div className="Navbar-list">
             {NavbarItems.Links.map((item, index) => {
-              return (
-                <Link key={index} to={item.path}>
-                  {item.name}
-                </Link>
-              );
+              if (item.enabled === true) {
+                return (
+                  <Link key={index} to={item.path}>
+                    {item.name}
+                  </Link>
+                );
+              }
+              return null;
             })}
           </div>
           <div className="Navbar-Button">
