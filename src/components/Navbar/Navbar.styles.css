@@ -69,6 +69,10 @@
   color: var(--AlternativeBlue);
 }
 
+.Navbar-list{
+  display : none;
+}
+
 @media screen and (min-width: 768px) {
   .Navbar-Links {
     display: flex;
