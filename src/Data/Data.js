@@ -27,7 +27,7 @@ export const Data = {
       {
         name: "Servicios",
         path: "/services",
-        enabled: false,
+        enabled: true,
       },
       {
         name: "Contact",

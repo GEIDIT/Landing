@@ -13,7 +13,10 @@ export const Form = () => {
           className="form"
           name="contactos"
           method="POST"
+          netlify
+          data-netlify-recaptcha="true"
           data-netlify="true"
+          action="/"
         >
           <div className="form-content">
             <h2 className="title">{FormInfo.Title}</h2>
