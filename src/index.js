@@ -14,6 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="404" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

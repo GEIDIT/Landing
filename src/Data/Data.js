@@ -100,18 +100,22 @@ export const Data = {
       {
         name: "Nosotros",
         path: "/about",
+        enabled: false,
       },
       {
         name: "Servicios",
         path: "/services",
+        enabled: false,
       },
       {
         name: "Contact",
         path: "/contact",
+        enabled: false,
       },
       {
         name: "Vacantes",
         path: "/vacancies",
+        enabled: false,
       },
     ],
     Social: [
