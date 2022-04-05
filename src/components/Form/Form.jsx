@@ -1,10 +1,15 @@
 import React from "react";
 import { Data } from "../../Data/Data";
 import "./Form.styles.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 const { FormInfo } = Data;
 
 export const Form = () => {
+  const [state, handleSubmit] = useForm("xjvlezan");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div className="Form">
       <div className="Form-Container">
@@ -12,11 +17,7 @@ export const Form = () => {
           id="contact"
           className="form"
           name="contactos"
-          method="POST"
-          netlify
-          data-netlify-recaptcha="true"
-          data-netlify="true"
-          action="/"
+          onSubmit={handleSubmit}
         >
           <div className="form-content">
             <h2 className="title">{FormInfo.Title}</h2>
@@ -80,7 +81,11 @@ export const Form = () => {
               ></textarea>
             </label>
 
-            <button className="button button-outline" type="submit">
+            <button
+              className="button button-outline"
+              type="submit"
+              disabled={state.submitting}
+            >
               Enviar mensaje
             </button>
           </div>

@@ -17,14 +17,17 @@ export const Footer = () => {
             </div>
             <div className="Footer-links">
               <ul>
-                {FooterInfo.Links.map((link, index) => {
-                  return (
-                    <li key={index} className="Footer-li">
-                      <Link className="Footer-link" to={link.path}>
-                        {link.name}
-                      </Link>
-                    </li>
-                  );
+                {FooterInfo.Links.map((item, index) => {
+                  if (item.enabled === true) {
+                    return (
+                      <li key={index} className="Footer-li">
+                        <Link className="Footer-link" to={item.path}>
+                          {item.name}
+                        </Link>
+                      </li>
+                    );
+                  }
+                  return null;
                 })}
               </ul>
             </div>
